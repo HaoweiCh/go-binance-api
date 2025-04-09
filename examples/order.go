@@ -9,14 +9,14 @@ import (
 )
 
 func SpotOrder() {
-	binance.UseTestnet = true
+	binance_api.UseTestnet = true
 	apiKey := ""
 	secret := ""
 	client := binance_api.NewClient(apiKey, secret)
 
 	symbol := "BTCUSDT"
-	side := binance.SideTypeSell
-	orderType := binance.OrderTypeMarket
+	side := binance_api.SideTypeSell
+	orderType := binance_api.OrderTypeMarket
 	quantity := "0.0001"
 
 	res, err := client.NewCreateOrderService().Symbol(symbol).Side(side).
