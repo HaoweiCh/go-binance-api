@@ -4,14 +4,14 @@ go 1.23.4
 
 // require  v2.8.0
 
-replace github.com/adshao/go-binance/v2 => ../v2
+replace github.com/HaoweiCh/go-binance-api => ../
 
-replace github.com/adshao/go-binance/v2/futures => ../v2/futures
+replace github.com/HaoweiCh/go-binance-api/futures => ../futures
 
-require github.com/adshao/go-binance/v2 v2.0.0-00010101000000-000000000000
+require github.com/HaoweiCh/go-binance-api v1.0.0-00010101000000-000000000000
 
 require (
-	github.com/bitly/go-simplejson v0.5.0 // indirect
+	github.com/bitly/go-simplejson v0.5.1 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/gorilla/websocket v1.5.3 // indirect
 	github.com/jpillora/backoff v1.0.0 // indirect

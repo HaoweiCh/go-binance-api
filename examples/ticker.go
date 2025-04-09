@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/adshao/go-binance/v2"
+	"github.com/HaoweiCh/go-binance-api"
 )
 
 func Ticker() {

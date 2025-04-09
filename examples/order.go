@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/adshao/go-binance/v2"
-	"github.com/adshao/go-binance/v2/futures"
+	"github.com/HaoweiCh/go-binance-api"
+	"github.com/HaoweiCh/go-binance-api/futures"
 )
 
 func SpotOrder() {

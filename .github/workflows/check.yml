@@ -25,9 +25,9 @@ jobs:
     - name: Setup Go
       uses: actions/setup-go@v3
       with:
-        go-version-file: './v2/go.mod'
+        go-version-file: './go.mod'
         cache: true
-        cache-dependency-path: './v2/go.sum'
+        cache-dependency-path: './go.sum'
     - name: Format
       run: ./check.sh format
     - name: Vet
