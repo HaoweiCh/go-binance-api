@@ -10,7 +10,7 @@ import (
 func Ticker() {
 	apiKey := ""
 	secret := ""
-	client := binance.NewClient(apiKey, secret)
+	client := binance_api.NewClient(apiKey, secret)
 
 	// spot ticker
 	ticker, err := client.NewTradingDayTickerService().Symbol("BTCUSDT").Do(context.Background())
@@ -25,7 +25,7 @@ func Ticker() {
 	}
 
 	// futures ticker
-	futuresClient := binance.NewFuturesClient(apiKey, secret)
+	futuresClient := binance_api.NewFuturesClient(apiKey, secret)
 	futuresTicker, err2 := futuresClient.NewListBookTickersService().Symbol("BTCUSDT").Do(context.Background())
 	if err2 != nil {
 		fmt.Println(err2)

@@ -12,7 +12,7 @@ func SpotOrder() {
 	binance.UseTestnet = true
 	apiKey := ""
 	secret := ""
-	client := binance.NewClient(apiKey, secret)
+	client := binance_api.NewClient(apiKey, secret)
 
 	symbol := "BTCUSDT"
 	side := binance.SideTypeSell
@@ -34,7 +34,7 @@ func FuturesOrder() {
 	futures.UseTestnet = true
 	apiKey := ""
 	secret := ""
-	client := binance.NewFuturesClient(apiKey, secret)
+	client := binance_api.NewFuturesClient(apiKey, secret)
 
 	symbol := "LTCUSDT"
 	side := futures.SideTypeSell

@@ -76,8 +76,8 @@ var (
     apiKey = "your api key"
     secretKey = "your secret key"
 )
-client := binance.NewClient(apiKey, secretKey)
-futuresClient := binance.NewFuturesClient(apiKey, secretKey)    // USDT-M Futures
+client := binance_api.NewClient(apiKey, secretKey)
+futuresClient := binance_api.NewFuturesClient(apiKey, secretKey)    // USDT-M Futures
 deliveryClient := binance.NewDeliveryClient(apiKey, secretKey)  // Coin-M Futures
 ```
 
@@ -359,7 +359,7 @@ import (
 )
 
 binance.UseTestnet = true
-client := binance.NewClient(apiKey, secretKey)
+client := binance_api.NewClient(apiKey, secretKey)
 ```
 
 #### Futures (usd(s)-m futures)

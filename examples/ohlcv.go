@@ -10,7 +10,7 @@ import (
 func Ohlcv() {
 	apiKey := ""
 	secret := ""
-	client := binance.NewClient(apiKey, secret)
+	client := binance_api.NewClient(apiKey, secret)
 
 	// spot ohlcv
 	ohlcv, err := client.NewKlinesService().Symbol("BTCUSDT").Interval("1m").Limit(5).Do(context.Background())
@@ -25,7 +25,7 @@ func Ohlcv() {
 	}
 
 	// futures ohlcv
-	futuresClient := binance.NewFuturesClient(apiKey, secret)
+	futuresClient := binance_api.NewFuturesClient(apiKey, secret)
 	futuresOHLCV, err2 := futuresClient.NewKlinesService().Symbol("BTCUSDT").Interval("1m").Limit(5).Do(context.Background())
 	if err2 != nil {
 		fmt.Println(err2)

@@ -1,4 +1,4 @@
-package go_binance_api
+package binance_api
 
 import (
 	"github.com/stretchr/testify/suite"

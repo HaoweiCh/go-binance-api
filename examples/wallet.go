@@ -10,7 +10,7 @@ import (
 func WalletBalance() {
 	apiKey := ""
 	secret := ""
-	client := binance.NewClient(apiKey, secret)
+	client := binance_api.NewClient(apiKey, secret)
 
 	quoteAsset := "USDT"
 
